@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqfnycmo1k7qm"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_up3ad"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_m7h2g"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="ValidateAction" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(7.75, 12.75)
+scale = Vector2(16.5, 26.5)
+texture = SubResource("CanvasTexture_up3ad")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 2.0
+offset_right = 13.0
+offset_bottom = 23.0
+text = "A"
+label_settings = SubResource("LabelSettings_m7h2g")

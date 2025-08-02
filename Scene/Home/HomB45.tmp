@@ -1,0 +1,72 @@
+[gd_scene load_steps=8 format=3 uid="uid://pemhx01tsk4h"]
+
+[ext_resource type="Script" path="res://Script/level.gd" id="1_kpgmr"]
+[ext_resource type="PackedScene" uid="uid://nmsgxuvkq5gg" path="res://Scene/Accessories/Background/door.tscn" id="3_43qwo"]
+[ext_resource type="PackedScene" uid="uid://cc4itbqx0wd3e" path="res://Scene/player.tscn" id="3_olwnv"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_8ghrt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m41ix"]
+size = Vector2(1319, 58)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_2rlii"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_blr85"]
+size = Vector2(102, 557)
+
+[node name="Home" type="Node2D"]
+script = ExtResource("1_kpgmr")
+
+[node name="Player" parent="." instance=ExtResource("3_olwnv")]
+position = Vector2(340, 582)
+scale = Vector2(3, 3)
+speed = 125.0
+jump_force = -250.0
+gravity = 400
+
+[node name="Ground" type="StaticBody2D" parent="."]
+position = Vector2(-337, 594)
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(650, 19.5)
+scale = Vector2(1316, 57)
+texture = SubResource("CanvasTexture_8ghrt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2(649.5, 19)
+shape = SubResource("RectangleShape2D_m41ix")
+
+[node name="StartPosition" type="Marker2D" parent="."]
+position = Vector2(342, 580)
+
+[node name="Wall2" type="StaticBody2D" parent="."]
+position = Vector2(-299, 295)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wall2"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(5.00003, 11)
+scale = Vector2(102, 558)
+texture = SubResource("CanvasTexture_2rlii")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2"]
+position = Vector2(5, 11.5)
+shape = SubResource("RectangleShape2D_blr85")
+
+[node name="Wall" type="StaticBody2D" parent="."]
+position = Vector2(915, 295)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wall"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(5.00003, 11)
+scale = Vector2(102, 558)
+texture = SubResource("CanvasTexture_2rlii")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
+position = Vector2(5, 11.5)
+shape = SubResource("RectangleShape2D_blr85")
+
+[node name="Door" parent="." instance=ExtResource("3_43qwo")]
+position = Vector2(420, 503)
+
+[connection signal="area_entered" from="Door" to="Player" method="_on_door_area_entered"]
