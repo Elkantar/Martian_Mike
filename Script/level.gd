@@ -25,5 +25,8 @@ func _on_trap_touched_player() -> void:
 	reset_player()
 
 func reset_player():
+	player.DeathPlay()
+	await get_tree().create_timer(1.5).timeout
 	player.velocity = Vector2.ZERO
 	player.global_position = start_position.global_position
+	get_tree().reload_current_scene()

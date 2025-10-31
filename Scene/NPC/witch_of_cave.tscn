@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://cl8sxgtsuktrm"]
+
+[ext_resource type="Texture2D" uid="uid://dbquvndf18upn" path="res://asset/textures/NPC/WitchOfTheCave/idle/1.png" id="1_sm50y"]
+[ext_resource type="Texture2D" uid="uid://bchqmvkyd5p2r" path="res://asset/textures/NPC/WitchOfTheCave/idle/2.png" id="2_aicah"]
+[ext_resource type="Texture2D" uid="uid://bkq7e7smhclet" path="res://asset/textures/NPC/WitchOfTheCave/idle/3.png" id="3_epo6g"]
+[ext_resource type="Texture2D" uid="uid://wu0bc646kib4" path="res://asset/textures/NPC/WitchOfTheCave/idle/4.png" id="4_0cuaj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_81xjy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_sm50y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_aicah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_epo6g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0cuaj")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ck4qm"]
+size = Vector2(77, 98)
+
+[node name="WitchOfCave" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(20, 20)
+scale = Vector2(1.625, 1.625)
+sprite_frames = SubResource("SpriteFrames_81xjy")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.114106
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(18.5, 20)
+shape = SubResource("RectangleShape2D_ck4qm")

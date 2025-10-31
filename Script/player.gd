@@ -8,14 +8,17 @@ class_name Player
 @onready var collision_crouch = $CollisionShape2D_Crouch
 
 @export var speed = 225.0
-@export var jump_force = -300.0
+@export var jump_force = -200.0
 
-@export var gravity = 400
+@export var gravity := 400
 
 var is_crouching: bool = false
 var crouch_phase: String = ""
+var is_dead = false
 
 func _physics_process(delta: float) -> void:
+	if is_dead:
+		return
 	if (is_on_floor() == false):
 		velocity.y += gravity * delta
 		if velocity.y > 500 :
@@ -34,12 +37,22 @@ func _physics_process(delta: float) -> void:
 	
 	update_animation(direction)
 
+func DeathPlay() :
+	is_dead = true
+	velocity = Vector2.ZERO
+	animated_sprite.play("Death")
 #___________________________Jump___________________________#
 
 func jump(force):
 	if !is_crouching :
 		velocity.y = force
 
+func jumpBoost(force):
+	jump_force += force 
+	print("jumpBoost is applied :" + str(jump_force))
+	await get_tree().create_timer(3.0).timeout
+	jump_force -= force 
+	print("jumpBoost is canceled :" + str(jump_force))
 #___________________________Crouch___________________________#
 func handle_crouch():		
 	if Input.is_action_just_pressed("down") and is_on_floor():
@@ -81,7 +94,7 @@ func can_stand_up() -> bool:
 
 func update_animation(direction) :
 	if is_crouching :
-		speed = 125
+		speed = 0
 		return
 	else :
 		speed = 225
@@ -95,3 +108,8 @@ func update_animation(direction) :
 			animated_sprite.play("Jump")
 		else :
 			animated_sprite.play("fall") 
+
+
+#func _on_jump_boost_touched_player() -> void:
+	#jump_force *= 2
+	#jump_force /= 2

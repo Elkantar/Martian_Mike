@@ -636,5 +636,7 @@ sources/1 = SubResource("TileSetAtlasSource_p2b38")
 sources/0 = SubResource("TileSetAtlasSource_lld0k")
 
 [node name="TileMap" type="TileMap"]
+scale = Vector2(1.5, 1.5)
 tile_set = SubResource("TileSet_6v0ry")
+rendering_quadrant_size = 32
 format = 2

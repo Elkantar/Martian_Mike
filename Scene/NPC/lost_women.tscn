@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://cbpmwtr000gfq"]
+
+[ext_resource type="Texture2D" uid="uid://ct1024bfapqsv" path="res://asset/textures/NPC/LostWomen/idle/1.png" id="1_qfakr"]
+[ext_resource type="Texture2D" uid="uid://cpi4t6kjdoeqg" path="res://asset/textures/NPC/LostWomen/idle/2.png" id="2_dbcm4"]
+[ext_resource type="Texture2D" uid="uid://c24ybnw786gah" path="res://asset/textures/NPC/LostWomen/idle/3.png" id="3_x3nkx"]
+[ext_resource type="Texture2D" uid="uid://xrr08psueq4p" path="res://asset/textures/NPC/LostWomen/idle/4.png" id="4_gn0ml"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5plii"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qfakr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dbcm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_x3nkx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gn0ml")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0sug5"]
+size = Vector2(49, 88)
+
+[node name="LostWomen" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(14, 14)
+scale = Vector2(1.4375, 1.4375)
+sprite_frames = SubResource("SpriteFrames_5plii")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.0219204
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10.5, 15)
+shape = SubResource("RectangleShape2D_0sug5")

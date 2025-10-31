@@ -5,7 +5,7 @@
 [sub_resource type="CanvasTexture" id="CanvasTexture_2323h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7y2tp"]
-size = Vector2(47, 95)
+size = Vector2(47, 76)
 
 [node name="Door" type="Area2D"]
 collision_mask = 2
@@ -13,12 +13,12 @@ script = ExtResource("1_i5rnk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0.332392, 0.186308, 0.0474012, 1)
-position = Vector2(24.25, 60.5)
-scale = Vector2(49.5, 95)
+position = Vector2(24.75, 38)
+scale = Vector2(49.5, 76)
 texture = SubResource("CanvasTexture_2323h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(24.5, 61.5)
+position = Vector2(25, 39)
 shape = SubResource("RectangleShape2D_7y2tp")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

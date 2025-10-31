@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://36ly4f5q25b4"]
+[gd_scene load_steps=53 format=3 uid="uid://36ly4f5q25b4"]
 
 [ext_resource type="Script" uid="uid://drr5uummasyjo" path="res://Script/player.gd" id="1_d4hob"]
 [ext_resource type="Texture2D" uid="uid://d4cqdb3oigf3a" path="res://asset/textures/Warrior/Jump/Warrior_Jump_1.png" id="2_u5usx"]
@@ -14,19 +14,41 @@
 [ext_resource type="Texture2D" uid="uid://504bmu48xy73" path="res://asset/textures/Warrior/Fall/Warrior_Fall_3.png" id="7_3uso1"]
 [ext_resource type="Texture2D" uid="uid://c8thf41upovo8" path="res://asset/textures/Warrior/Crouch/Warrior_Crouch_4.png" id="7_inti8"]
 [ext_resource type="Texture2D" uid="uid://bhddpo8enuj5u" path="res://asset/textures/Warrior/idle/Warrior_Idle_1.png" id="8_1mxdt"]
+[ext_resource type="Texture2D" uid="uid://bkqb4oab67o73" path="res://asset/textures/Warrior/Death-Effect/Warrior_Death_1.png" id="8_32tlj"]
+[ext_resource type="Texture2D" uid="uid://ffpkaxy0nib2" path="res://asset/textures/Warrior/Death-Effect/Warrior_Death_2.png" id="9_h0xwp"]
 [ext_resource type="Texture2D" uid="uid://cq1o1fed5dlf3" path="res://asset/textures/Warrior/idle/Warrior_Idle_2.png" id="9_xybbt"]
 [ext_resource type="Texture2D" uid="uid://0qjij8rwc0k" path="res://asset/textures/Warrior/idle/Warrior_Idle_3.png" id="10_78fy3"]
+[ext_resource type="Texture2D" uid="uid://pi55vvl3yjrn" path="res://asset/textures/Warrior/Death-Effect/Warrior_Death_3.png" id="10_ec7v1"]
 [ext_resource type="Texture2D" uid="uid://dm3pwl2bbiskv" path="res://asset/textures/Warrior/idle/Warrior_Idle_4.png" id="11_e7qvv"]
+[ext_resource type="Texture2D" uid="uid://crkanr2tue0am" path="res://asset/textures/Warrior/Death-Effect/Warrior_Death_4.png" id="11_lohdo"]
+[ext_resource type="Texture2D" uid="uid://cd4gd8im6fpgx" path="res://asset/textures/Warrior/Death-Effect/Warrior_Death_5.png" id="12_knkj0"]
 [ext_resource type="Texture2D" uid="uid://dk5vl7h38pfi2" path="res://asset/textures/Warrior/idle/Warrior_Idle_5.png" id="12_so0ak"]
 [ext_resource type="Texture2D" uid="uid://diors0nq233ij" path="res://asset/textures/Warrior/idle/Warrior_Idle_6.png" id="13_g3ssx"]
+[ext_resource type="Texture2D" uid="uid://c8nc48mnky4ee" path="res://asset/textures/Warrior/Death-Effect/Warrior_Death_6.png" id="13_us6vd"]
 [ext_resource type="Texture2D" uid="uid://cds0mtp3qe5vy" path="res://asset/textures/Warrior/Run/Warrior_Run_1.png" id="14_jh0a3"]
+[ext_resource type="Texture2D" uid="uid://b64ufqelco08l" path="res://asset/textures/Warrior/Death-Effect/Warrior_Death_7.png" id="14_pfno3"]
+[ext_resource type="Texture2D" uid="uid://bwp03avdh3rai" path="res://asset/textures/Warrior/Death-Effect/Warrior_Death_8.png" id="15_hstcv"]
 [ext_resource type="Texture2D" uid="uid://i0ohxrpjahod" path="res://asset/textures/Warrior/Run/Warrior_Run_2.png" id="15_wjftu"]
+[ext_resource type="Texture2D" uid="uid://b7e0xxo1oghno" path="res://asset/textures/Warrior/Death-Effect/Warrior_Death_9.png" id="16_44csa"]
 [ext_resource type="Texture2D" uid="uid://bkhry1p7d2e8n" path="res://asset/textures/Warrior/Run/Warrior_Run_3.png" id="16_uq2lj"]
 [ext_resource type="Texture2D" uid="uid://bsixe8cy48gw5" path="res://asset/textures/Warrior/Run/Warrior_Run_4.png" id="17_g67e7"]
+[ext_resource type="Texture2D" uid="uid://dugoxdhp5xi71" path="res://asset/textures/Warrior/Death-Effect/Warrior_Death_10.png" id="17_ij5ig"]
 [ext_resource type="Texture2D" uid="uid://dgwc8u74ma7ba" path="res://asset/textures/Warrior/Run/Warrior_Run_5.png" id="18_oxr3v"]
+[ext_resource type="Texture2D" uid="uid://g8d5l1km75jw" path="res://asset/textures/Warrior/Death-Effect/Warrior_Death_11.png" id="18_p3xr0"]
 [ext_resource type="Texture2D" uid="uid://d0g8g2fdnf2t3" path="res://asset/textures/Warrior/Run/Warrior_Run_6.png" id="19_3se7k"]
+[ext_resource type="Texture2D" uid="uid://dcx2idfl6w6d" path="res://asset/textures/Warrior/DeathnoEffect/Warrior_Death_1.png" id="19_lfypt"]
+[ext_resource type="Texture2D" uid="uid://cc1xc5browu0y" path="res://asset/textures/Warrior/DeathnoEffect/Warrior_Death_2.png" id="20_fyycs"]
 [ext_resource type="Texture2D" uid="uid://cr4el11gmnlct" path="res://asset/textures/Warrior/Run/Warrior_Run_7.png" id="20_h7frn"]
 [ext_resource type="Texture2D" uid="uid://bf3lpet0qjbci" path="res://asset/textures/Warrior/Run/Warrior_Run_8.png" id="21_5x55q"]
+[ext_resource type="Texture2D" uid="uid://dbfadj2qugwm6" path="res://asset/textures/Warrior/DeathnoEffect/Warrior_Death_3.png" id="21_t2qky"]
+[ext_resource type="Texture2D" uid="uid://ckbkqcaf7egnp" path="res://asset/textures/Warrior/DeathnoEffect/Warrior_Death_4.png" id="22_olvwy"]
+[ext_resource type="Texture2D" uid="uid://dqfya62vtwiv5" path="res://asset/textures/Warrior/DeathnoEffect/Warrior_Death_5.png" id="23_nouge"]
+[ext_resource type="Texture2D" uid="uid://cdltg631wdpln" path="res://asset/textures/Warrior/DeathnoEffect/Warrior_Death_6.png" id="24_52r7x"]
+[ext_resource type="Texture2D" uid="uid://c7pvmk8h8h20x" path="res://asset/textures/Warrior/DeathnoEffect/Warrior_Death_7.png" id="25_ldkrn"]
+[ext_resource type="Texture2D" uid="uid://r2kuudxcincc" path="res://asset/textures/Warrior/DeathnoEffect/Warrior_Death_8.png" id="26_523do"]
+[ext_resource type="Texture2D" uid="uid://dcqr0o0c3tavp" path="res://asset/textures/Warrior/DeathnoEffect/Warrior_Death_9.png" id="27_q875p"]
+[ext_resource type="Texture2D" uid="uid://beueercjmx4cj" path="res://asset/textures/Warrior/DeathnoEffect/Warrior_Death_10.png" id="28_nmwi8"]
+[ext_resource type="Texture2D" uid="uid://b4lbwgwvhy54k" path="res://asset/textures/Warrior/DeathnoEffect/Warrior_Death_11.png" id="29_cmroe"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6pacr"]
 animations = [{
@@ -62,6 +84,82 @@ animations = [{
 "loop": true,
 "name": &"Crouch_idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_32tlj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_h0xwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ec7v1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_lohdo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_knkj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_us6vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_pfno3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hstcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_44csa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ij5ig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_p3xr0")
+}],
+"loop": false,
+"name": &"Death",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_lfypt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_fyycs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_t2qky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_olvwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_nouge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_52r7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ldkrn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_523do")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_q875p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_nmwi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_cmroe")
+}],
+"loop": true,
+"name": &"DeathNoEffect",
+"speed": 11.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -145,10 +243,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vt8jj"]
-size = Vector2(20, 22)
+size = Vector2(16, 17)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_flvjf"]
-size = Vector2(12.5, 32)
+size = Vector2(11, 25)
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
@@ -157,16 +255,17 @@ script = ExtResource("1_d4hob")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(0, -16)
+position = Vector2(-6, -11.1111)
+scale = Vector2(0.777778, 0.777778)
 sprite_frames = SubResource("SpriteFrames_6pacr")
-animation = &"Crouch_end"
+animation = &"DeathNoEffect"
 autoplay = "idle"
 
 [node name="CollisionShape2D_Crouch" type="CollisionShape2D" parent="."]
-position = Vector2(-8, -6)
+position = Vector2(-12, -3.5)
 shape = SubResource("RectangleShape2D_vt8jj")
 disabled = true
 
 [node name="CollisionShape2D_Normal" type="CollisionShape2D" parent="."]
-position = Vector2(-4.75, -11)
+position = Vector2(-5.5, -7.5)
 shape = SubResource("RectangleShape2D_flvjf")
